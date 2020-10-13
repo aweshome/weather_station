@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DS3231
+D RTC I2C
+K DS3231
+$ENDCMP
+#
+#End Doc Library

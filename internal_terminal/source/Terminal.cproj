@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
+    <ProjectGuid>{359a246e-b023-4471-a9b9-c9b303f121b4}</ProjectGuid>
+    <avrdevice>ATmega1284P</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>C</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>Terminal</AssemblyName>
+    <Name>Terminal</Name>
+    <RootNamespace>Terminal</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <UncachedRange />
+    <preserveEEPROM>true</preserveEEPROM>
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
+    <BootSegment>2</BootSegment>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <AsfFrameworkConfig>
+      <framework-data>
+  <options />
+  <configurations />
+  <files />
+  <documentation help="" />
+  <offline-documentation help="" />
+  <dependencies>
+    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.39.0" />
+  </dependencies>
+</framework-data>
+    </AsfFrameworkConfig>
+    <avrtool>com.atmel.avrdbg.tool.simulator</avrtool>
+    <com_atmel_avrdbg_tool_simulator>
+      <ToolOptions xmlns="">
+        <InterfaceProperties>
+        </InterfaceProperties>
+      </ToolOptions>
+      <ToolType xmlns="">com.atmel.avrdbg.tool.simulator</ToolType>
+      <ToolNumber xmlns="">
+      </ToolNumber>
+      <ToolName xmlns="">Simulator</ToolName>
+    </com_atmel_avrdbg_tool_simulator>
+    <ResetRule>0</ResetRule>
+    <EraseKey />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGcc>
+        <avrgcc.common.Device>-mmcu=atmega1284p -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.0.106\gcc\dev\atmega1284p"</avrgcc.common.Device>
+        <avrgcc.common.optimization.RelaxBranches>True</avrgcc.common.optimization.RelaxBranches>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>NDEBUG</Value>
+            <Value>F_CPU=18432000UL</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.0.106\include</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+        <avrgcc.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.0.106\include</Value>
+          </ListValues>
+        </avrgcc.assembler.general.IncludePaths>
+      </AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGcc>
+        <avrgcc.common.Device>-mmcu=atmega1284p -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.0.106\gcc\dev\atmega1284p"</avrgcc.common.Device>
+        <avrgcc.common.optimization.RelaxBranches>True</avrgcc.common.optimization.RelaxBranches>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+            <Value>F_CPU=18432000UL</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.0.106\include</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+        <avrgcc.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.0.106\include</Value>
+          </ListValues>
+        </avrgcc.assembler.general.IncludePaths>
+        <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
+      </AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="23LCV1024\23lcv1024.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="23LCV1024\23lcv1024.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="BMP180\bmp180.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="BMP180\bmp180.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="common.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="common.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="DHT22\dht22.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="DHT22\dht22.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="DS3231\DS3231.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="DS3231\DS3231.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="EG9018C\eg9018c.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="EG9018C\eg9018c.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="EG9018C\lcd.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="EG9018C\lcd.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="EG9018C\LCD_FONT\lcd_fonts.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="EG9018C\LCD_FONT\lcd_fonts.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="EG9018C\LCD_FONT\Tahoma12pt_tighest.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="EG9018C\LCD_FONT\TimesNewRoman_120pt_tighest.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="EG9018C\LCD_FONT\TimesNewRoman_36pt_tighest.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="EG9018C\LCD_GRAPH\lcd_graph.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="EG9018C\LCD_GRAPH\lcd_graph.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="EG9018C\LCD_PICT\chmurka.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="EG9018C\LCD_PICT\chmurka.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="EG9018C\LCD_PICT\dom.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="EG9018C\LCD_PICT\dom.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="EG9018C\LCD_PICT\domek.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="EG9018C\LCD_PICT\domek.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="EG9018C\LCD_TEXT\lcd_text.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="EG9018C\LCD_TEXT\lcd_text.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="fsm\fsm.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="fsm\fsm.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Interfaces\i2c_twi.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Interfaces\i2c_twi.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Interfaces\uart.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Interfaces\uart.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Interfaces\spi.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Interfaces\spi.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="main.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="nRF24L01\nrf24l01.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="nRF24L01\nrf24l01.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="nRF24L01\nrf24l01registers.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="nRF24L01\radio.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="nRF24L01\radio.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="PMSA003\pmsa003.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="PMSA003\pmsa003.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Telnet\komendy_at.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Telnet\komendy_at.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Telnet\mkvt100.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Telnet\mkvt100.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Telnet\telnet_menu.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Telnet\telnet_menu.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="watchdog.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="watchdog.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DS3231" />
+    <Folder Include="EG9018C" />
+    <Folder Include="EG9018C\LCD_FONT" />
+    <Folder Include="EG9018C\LCD_GRAPH" />
+    <Folder Include="EG9018C\LCD_PICT" />
+    <Folder Include="EG9018C\LCD_TEXT" />
+    <Folder Include="Interfaces" />
+    <Folder Include="BMP180" />
+    <Folder Include="23LCV1024" />
+    <Folder Include="DHT22" />
+    <Folder Include="fsm" />
+    <Folder Include="PMSA003" />
+    <Folder Include="nRF24L01" />
+    <Folder Include="Telnet" />
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>

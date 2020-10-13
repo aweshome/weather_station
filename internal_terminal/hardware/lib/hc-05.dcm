@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP HC-05
+D Bluetooth HC-05
+K HC-05
+$ENDCMP
+#
+#End Doc Library

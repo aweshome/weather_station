@@ -1,0 +1,16 @@
+Raport ERC (2015-06-17 13:16:38)
+
+***** Arkusz /
+
+***** Arkusz /uC/
+
+***** Arkusz /supply/
+
+***** Arkusz /lcd/
+
+***** Arkusz /periphery/
+ErrType(5): BŁĄD: Konflikt pomiędzy pinami.
+    @ (104,14 mm,116,84 mm): Pin 7 (Wyjście) symbolu MOD504 jest połączony z 
+    @ (78,74 mm,76,20 mm): pin 2 (Wyjście) symbolu MOD501 (sieć 39).
+
+ >> Błędy ERC: 0

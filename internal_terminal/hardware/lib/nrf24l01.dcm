@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP nRF24L01
+D Nadajnik/odbiornik 2,4 GHz SPI
+K nRF24L01
+$ENDCMP
+#
+#End Doc Library

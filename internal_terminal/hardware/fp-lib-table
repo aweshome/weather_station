@@ -1,0 +1,10 @@
+(fp_lib_table
+  (lib (name BMP180)(type KiCad)(uri "$(KIPRJMOD)/BMP180.pretty")(options "")(descr ""))
+  (lib (name AMBM_dc-dc)(type KiCad)(uri "$(KIPRJMOD)/AMBM_dc-dc.pretty")(options "")(descr ""))
+  (lib (name DS3231)(type KiCad)(uri "$(KIPRJMOD)/DS3231.pretty")(options "")(descr ""))
+  (lib (name AM2302)(type KiCad)(uri "$(KIPRJMOD)/AM2302.pretty")(options "")(descr ""))
+  (lib (name nRF24L01)(type KiCad)(uri "$(KIPRJMOD)/nRF24L01.pretty")(options "")(descr ""))
+  (lib (name Lantronix)(type KiCad)(uri "$(KIPRJMOD)/Lantronix.pretty")(options "")(descr ""))
+  (lib (name util)(type KiCad)(uri "$(KIPRJMOD)/util.pretty")(options "")(descr ""))
+  (lib (name My_modules)(type KiCad)(uri C:/Users/adamw/Documents/kicad/My_modules.pretty)(options "")(descr ""))
+)

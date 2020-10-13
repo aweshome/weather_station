@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BMP180
+D Przetwornik ciśnienia I2C
+K BMP180
+$ENDCMP
+#
+#End Doc Library

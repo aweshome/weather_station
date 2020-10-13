@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AMBM_DC2
+D Przetwornica DC/DC step-down 900mA
+K DC-DC, AMBM
+$ENDCMP
+#
+$CMP AMBM_DCN01
+D Przetwornica DC/DC inwerter 100mA
+K DC-DC, AMBM
+$ENDCMP
+#
+#End Doc Library

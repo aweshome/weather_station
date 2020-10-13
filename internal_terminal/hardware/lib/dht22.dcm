@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DHT22
+D Przetwornik wilgotności
+K DHT22 AM2302
+$ENDCMP
+#
+#End Doc Library
